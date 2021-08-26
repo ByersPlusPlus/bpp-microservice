@@ -29,7 +29,7 @@ This takes care of the prep work!
 
 Next you want to run `cargo generate --git https://github.com/ByersPlusPlus/bpp-microservice.git`, which will ask you a few questions about your project, like the name of the project and the proto file.
 
-**IMPORTANT!** It is currently not possible to generate the temple over SSH with any SSH keys other than RSA!
+**IMPORTANT!** It is currently not possible to generate the template over SSH with any SSH keys other than RSA!
 
 If everything worked out fine, you should now have a new Rust project, containing most of the files you need. There is just one more step before you can start to develop, which is adding the proto repository as a submodule. You can do that by running either `git submodule add git@github.com:yourName/proto.git` or `git submodule add https://github.com/yourName/proto.git` (please make sure to rename `yourName` to your GitHub username).
 
