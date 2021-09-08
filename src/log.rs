@@ -4,12 +4,6 @@ use fern::{
 
 /// Sets up regular logging
 pub fn setup_log(verbose: bool) {
-    let syslog_formatter = syslog::Formatter3164 {
-        facility: syslog::Facility::LOG_USER,
-        hostname: None,
-        process: "youtubeservice".to_owned(),
-        pid: 0,
-    };
     let colors_line = ColoredLevelConfig::new()
         .error(Color::Red)
         .warn(Color::Yellow)
